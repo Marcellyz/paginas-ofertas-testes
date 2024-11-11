@@ -1,0 +1,48 @@
+.container-template {
+  background-color: #6e32e9;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0px 25px 0px;
+}
+
+.security,
+.entrega,
+.cartao-de-credito,
+.bandeiras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-right: 60px;
+}
+
+.security {
+    padding-top: 12px;
+}
+
+.entrega {
+    padding-bottom: 8px;
+}
+
+.bandeiras {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 8px;
+}
+
+.security > svg, .cartao-de-credito > svg {
+  font-size: 30px;
+}
+
+.entrega > svg {
+    font-size: 45px;
+}
+
+.bandeiras > svg {
+    font-size: 50px;
+}
+

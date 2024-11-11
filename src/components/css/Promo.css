@@ -1,0 +1,48 @@
+.container-promo {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.box-promo > p {
+  font-weight: bold;
+  padding-top: 8px;
+  width: 200px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.box-promo > p > a{
+  text-decoration: none;
+  color: #000;
+}
+
+.box-promo > img {
+  cursor: pointer;
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.promo > p {
+  font-weight: bold;
+}
+
+.promo > p:first-child {
+  background-color: #ff3d00;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.option {
+  color: #6e32e9;
+  font-size: 18px;
+}

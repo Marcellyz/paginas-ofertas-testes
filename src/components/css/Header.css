@@ -1,0 +1,106 @@
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo > svg {
+    font-size: 40px;
+    color: #6E32E9;
+}
+
+.header-logo > h1 {
+    font-family: 'Jost', sans-serif;
+    color: #6E32E9;
+    padding-left: 12px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search {
+    background-color: #ece6ec;
+    border-radius: 35px;
+    padding-right: 15px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-search > input {
+    padding: 15px;
+    background-color: #ece6ec;
+    border: none;
+    border-radius: 35px;
+    width: 300px;
+}
+
+.header-search > svg {
+    font-size: 20px;
+}
+
+.header-nav-category {
+    margin-right:45px ;
+}
+
+.header-nav-category > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.header-nav-category > ul > li {
+    padding: 7px;
+    list-style: none;
+}
+
+.header-nav-category > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.header-nav-category > ul > li:last-child {
+    background-color: #6E32E9 ;
+    border-radius: 5px;
+    a{
+        color: #fff;
+    }
+}
+
+.header-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-user > svg {
+    font-size: 30px;
+    color: #6E32E9;
+}
+.welcome {
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.header-carrinho{
+    padding: 0px 15px 0px 15px;
+}
+
+.header-carrinho > svg {
+    font-size: 30px;
+    color: #6E32E9;
+}
