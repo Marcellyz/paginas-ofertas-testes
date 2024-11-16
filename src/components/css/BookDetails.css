@@ -1,0 +1,32 @@
+.technical-details {
+    margin: 20px 0;
+    padding: 2rem 5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 20px;
+    color: #6200ee;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+  }
+  
+  .details-list li {
+    margin-bottom: 5px;
+  }
+  
+  .details-list strong {
+    font-weight: bold;
+  }
+  

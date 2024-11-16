@@ -1,0 +1,142 @@
+.customer-reviews {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    color: #333;
+    padding-top: 2rem;
+    padding-left: 5rem;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #6200ee;
+    margin-bottom: 20px;
+  }
+  
+  .reviews-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  
+  .rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .rating-summary .stars {
+    color: #ffcc00;
+  }
+  
+  .rating-text {
+    font-weight: bold;
+  }
+  
+  .total-reviews {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .progress-bars {
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+  
+  .progress-bar .filled {
+    height: 10px; 
+    background-color: #6200ee; 
+    border-radius: 5px;
+    margin-right: 5px; 
+    transition: width 0.3s ease; 
+    width: 0%; 
+  }
+  
+  
+  .media-reviews {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .media-title {
+    font-size: 18px;
+    color: #6200ee;
+    margin-bottom: 10px;
+  }
+  
+  .media-carousel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .media-carousel .arrow {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .media-carousel .images {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  
+  .media-carousel img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+  
+  .comments-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-card {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  .comment-card .rating {
+    color: #ffcc00;
+  }
+
+  .rating {
+    padding: 5px;
+  }
+  
+
+  .review-author span {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .see-more {
+    display: block;
+    margin: 20px auto;
+    background: none;
+    border: 2px solid #6200ee;
+    color: #6200ee;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .see-more:hover {
+    background: #6200ee;
+    color: #fff;
+  }
+  

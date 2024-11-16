@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import PagePromo from "./components/pages/PagePromo";
 import TempletePag from "./components/TemplatePag";
 import Footer from "./components/Footer";
+import BookSection from "./components/pages/BookSection";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Header />
         <Nav />
         <div>
-         <PagePromo/>
+          <BookSection />
         </div>
         <TempletePag />
         <Footer />
