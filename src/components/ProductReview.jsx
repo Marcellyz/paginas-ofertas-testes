@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../components/css/ProductReview.css";
 
 const ProductReview = () => {
@@ -15,7 +15,7 @@ const ProductReview = () => {
       </div>
 
       <div className="product-details">
-        <h1>Harry Potter e a Câmara Secreta - J. K. Rowling</h1>
+        <h1>Harry Potter e a Pedra Filosofal - J. K. Rowling</h1>
         <div className="price-discount">
           <span className="discount">10% de desconto no pix</span>
           <span className="price">R$ 40,00</span>
