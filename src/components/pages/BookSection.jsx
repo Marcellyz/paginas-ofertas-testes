@@ -1,5 +1,4 @@
 import "../css/BookSection.css"; 
-
 import BookDetails from "../BookDetails.jsx";
 import CustomerReviews from "../CustomerReviews.jsx";
 
