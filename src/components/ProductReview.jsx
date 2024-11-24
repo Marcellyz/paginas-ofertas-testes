@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "../components/css/ProductReview.css";
+import PropTypes from "prop-types";
+import harryPotter from "../assets/capa_livros/harry_potter.jpg"
 
-const ProductReview = () => {
+const ProductReview = ({ data = {}, extraData = {} }) => {
   const [coverType, setCoverType] = useState("Capa dura");
   const [bookType, setBookType] = useState("Físico");
 
@@ -9,17 +11,17 @@ const ProductReview = () => {
     <div className="product-review">
       <div className="product-image">
         <img
-          src="../src/assets/capa_livros/harry_potter.jpg"
-          alt="Harry Potter e a Câmara Secreta - J. K. Rowling"
+          src={data.img || harryPotter}
+          alt={data.alt || "Harry Potter"}
         />
       </div>
 
       <div className="product-details">
-        <h1>Harry Potter e a Pedra Filosofal - J. K. Rowling</h1>
+        <h1>{data.title}</h1>
         <div className="price-discount">
-          <span className="discount">10% de desconto no pix</span>
-          <span className="price">R$ 40,00</span>
-          <small>10% de desconto no pix ou em até 5x de R$ 11,68</small>
+          <span className="discount">{data.promo || "10"}% de desconto no pix</span>
+          <span className="price">R$ {extraData.preco || "40,00"}</span>
+          <small>10% de desconto no pix ou em até 5x de R$ {(extraData.preco / 5 || 1).toFixed(2)}</small>
         </div>
 
         <div className="product-options">
@@ -53,12 +55,26 @@ const ProductReview = () => {
         <div className="product-synopsis">
           <h3>Sinopse</h3>
           <p>
-          Em Harry Potter e a Pedra Filosofal, o jovem Harry descobre que é um bruxo e inicia sua jornada na Escola de Magia e Bruxaria de Hogwarts. Entre amizades, mistérios e aventuras, ele enfrenta forças sombrias para proteger a lendária Pedra Filosofal. Um clássico repleto de magia, coragem e amizade.
+            {extraData.sinopse || "Sinopse não disponível"}
           </p>
         </div>
       </div>
     </div>
   );
+};
+
+// Atualizando a validação das props
+ProductReview.propTypes = {
+  data: PropTypes.shape({
+    img: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+    promo: PropTypes.number,
+  }),
+  extraData: PropTypes.shape({
+    preco: PropTypes.number,
+    sinopse: PropTypes.string,
+  }),
 };
 
 export default ProductReview;

@@ -7,6 +7,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'19/11/2023',
+        isbn: "978-85-7164-685-8",
+        selo: "Companhia das Letras",
         editora:'Rocco'
     },
     {
@@ -17,6 +19,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'16/09/2021',
+        isbn: "978-85-1234-567-8",
+        selo: "Penguin Books",
         editora:'Camelot Editora'
     },
     {
@@ -27,6 +31,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'30/06/2023',
+        isbn: "978-85-1234-567-8",
+        selo: "Penguin Books",
         editora:'Rocco'
     },
     {
@@ -37,6 +43,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'01/01/2000',
+        isbn: "978-85-7164-685-8",
+        selo: "Companhia das Letras",
         editora:'Rocco'
     },
     {
@@ -47,6 +55,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'18/01/2018',
+        isbn: "978-85-1234-567-8",
+        selo: "Penguin Books",
         editora:'Galera'
     },
     {
@@ -57,6 +67,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'25/02/2019',
+        isbn: "978-85-7164-685-8",
+        selo: "Companhia das Letras",
         editora:'Alt'
     },
     {
@@ -67,6 +79,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'24/08/2016',
+        isbn: "978-85-7164-685-8",
+        selo: "Companhia das Letras",
         editora:'Benediction Books'
     },
     {
@@ -77,6 +91,8 @@ const fichaTecnica = [
         peso: '0,1265575',
         acabamento:'Livro brochura',
         lancamento:'01/01/2008',
+        isbn: "978-85-7164-685-8",
+        selo: "Companhia das Letras",
         editora:'Atica'
     },
 ];

@@ -1,38 +1,54 @@
-import React from "react";
 import "../components/css/BookDetails.css";
+import PropTypes from "prop-types";
 
-const BookDetails = () => {
+const BookDetails = ({details}) => {
   return (
     <div className="technical-details">
       <h2 className="title">Ficha técnica</h2>
       <ul className="details-list">
         <li>
-          <strong>Título original:</strong> A metamorfose
+          <strong>Título original:</strong>{details.title}
         </li>
         <li>
-          <strong>Páginas:</strong> 104
+          <strong>Páginas:</strong> {details.paginas}
         </li>
         <li>
-          <strong>Formato:</strong> 14.00 x 21.00 cm
+          <strong>Formato:</strong> {details.formato}
         </li>
         <li>
-          <strong>Peso:</strong> 0.16 kg
+          <strong>Peso:</strong> {details.peso}
         </li>
         <li>
-          <strong>Acabamento:</strong> Livro brochura
+          <strong>Acabamento:</strong>Livro{details.acabamento}
         </li>
         <li>
-          <strong>Lançamento:</strong> 07/08/1997
+          <strong>Lançamento:</strong>{details.lancamento}
         </li>
         <li>
-          <strong>ISBN:</strong> 978-85-7164-685-8
+          <strong>ISBN:</strong>{details.isbn}
         </li>
         <li>
-          <strong>Selo:</strong> Companhia das Letras
+          <strong>Selo:</strong>{details.selo}
+        </li>
+        <li>
+          <strong>Editora:</strong>{details.editora}
         </li>
       </ul>
     </div>
   );
 };
-
+// Validação das props usando prop-types
+BookDetails.propTypes = {
+  details: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    paginas: PropTypes.number.isRequired,
+    formato: PropTypes.string.isRequired,
+    peso: PropTypes.string.isRequired,
+    acabamento: PropTypes.string.isRequired,
+    lancamento: PropTypes.string.isRequired,
+    isbn: PropTypes.string.isRequired,
+    selo: PropTypes.string.isRequired,
+    editora: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default BookDetails;

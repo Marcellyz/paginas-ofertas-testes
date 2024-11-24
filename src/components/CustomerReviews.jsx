@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/css/CustomerReviews.css";
 import book1 from "../assets/livros_review/book1.jpg";
 import book2 from "../assets/livros_review/book2.jpg";
