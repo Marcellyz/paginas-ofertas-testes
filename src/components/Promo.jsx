@@ -18,12 +18,11 @@ const Promo = () => {
     <div className="container-promo">
       {repeatedData.map((book, index) => (
         <div className="box-promo" key={`${book.id}-${index}`}>
-          <img src={book.img} alt={book.alt}/>
-          <p><a href="#">{book.title}</a></p>
+          <img src={book.img} alt={book.alt} onClick={()=> handleClick(book.id)}/>
+          <p><a href="#" onClick={()=> handleClick(book.id)}>{book.title}</a></p>
           <div className="promo">
           <p>{book.promo}% off</p>
           <p className="option">{book.option}</p>
-          <button onClick={()=> handleClick(book.id)}>Ver detalhes</button>
           </div>
         </div>
       ))}
